@@ -19,7 +19,13 @@ GROQ_TOKEN = st.secrets["GROQ_TOKEN"]
 TAVILY_TOKEN = st.secrets["TAVILY_API_KEY"]
 os.environ["TAVILY_API_KEY"] = TAVILY_TOKEN
 
-st.title("🔍 ARA: Academic Research Agent")
+st.title("ARA: Autonomus Research Agent")
+st.markdown(
+    "<p style='text-align:center; color:grey; font-size:20px;'>"
+    "© Created by <b>Dhirendra</b>"
+    "</p>",
+    unsafe_allow_html=True
+)
 st.markdown("Enter a research topic, and I will find papers and write a report for you.")
 
 user_input = st.text_input("Enter your research prompt:", placeholder="e.g., Compare Transformers and LSTMs for time-series")
@@ -537,3 +543,4 @@ if st.button("Run Research Agent"):
             mime="application/pdf"
 
         )
+
