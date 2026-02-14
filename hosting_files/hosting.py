@@ -4,7 +4,7 @@ import json
 import requests
 from io import BytesIO
 from markdown_pdf import MarkdownPdf, Section
-from V2_RAG_classes import Chunks, EmbeddingManager, VectorStore, RAGRetriever
+from hosting_V2_RAG_classes import Chunks, EmbeddingManager, VectorStore, RAGRetriever
 from langchain_groq import ChatGroq
 from langchain_core.messages import HumanMessage, SystemMessage
 from langchain_community.tools.tavily_search import TavilySearchResults
@@ -535,4 +535,5 @@ if st.button("Run Research Agent"):
             data=pdf_buffer.getvalue(),
             file_name="ARA_Research_Report.pdf",
             mime="application/pdf"
+
         )
