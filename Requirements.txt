@@ -1,0 +1,13 @@
+streamlit
+langchain-groq
+langchain-core
+langchain-community
+tavily-python
+pypdf
+beautifulsoup4
+readability-lxml
+sentence-transformers
+chromadb
+markdown-pdf
+scikit-learn
+numpy
