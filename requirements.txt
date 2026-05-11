@@ -11,3 +11,4 @@ chromadb
 markdown-pdf
 scikit-learn
 numpy
+requests
