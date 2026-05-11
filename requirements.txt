@@ -12,6 +12,6 @@ markdown-pdf
 scikit-learn
 numpy
 requests
-torch
-torchvision
 protobuf>=3.20.0,<5.0.0
+torch==2.2.2+cpu --extra-index-url https://download.pytorch.org/whl/cpu
+torchvision==0.17.2+cpu --extra-index-url https://download.pytorch.org/whl/cpu
