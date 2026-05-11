@@ -14,6 +14,10 @@ from pypdf import PdfReader
 from readability import Document
 from langchain_core.documents import Document as LCDocument
 
+
+# Force pure-python protobuf BEFORE any other imports load
+os.environ["PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION"] = "python"
+
 #tokens from streamlit
 GROQ_TOKEN = st.secrets["GROQ_TOKEN"]
 TAVILY_TOKEN = st.secrets["TAVILY_API_KEY"]
