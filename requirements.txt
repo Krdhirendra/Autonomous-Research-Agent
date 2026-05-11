@@ -13,4 +13,5 @@ scikit-learn
 numpy
 requests
 torchvision
-protobuf==3.20.3
+protoc >= 3.19.0
+
