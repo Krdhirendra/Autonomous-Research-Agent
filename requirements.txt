@@ -7,11 +7,11 @@ pypdf
 beautifulsoup4
 readability-lxml
 sentence-transformers
-chromadb
+chromadb==0.5.23
 markdown-pdf
 scikit-learn
 numpy
 requests
+torch
 torchvision
-protoc >= 3.19.0
-
+protobuf>=3.20.0,<5.0.0
