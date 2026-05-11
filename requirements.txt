@@ -12,4 +12,5 @@ markdown-pdf
 scikit-learn
 numpy
 requests
+torchvision
 protobuf==3.20.3
